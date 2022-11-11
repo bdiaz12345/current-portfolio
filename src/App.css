@@ -1,5 +1,70 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #192734;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.image {
+  width: 40vw;
+}
+
+.name {
+  color: white;
+}
+
+.description-of-self {
+  width: 70vw;
   text-align: center;
+  color: #ffffff;
+}
+
+.bottom-section {
+  padding: 5rem 0;
+}
+
+.projects-header {
+  text-align: center;
+}
+
+.project {
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.project-pic {
+  width: 40vw;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+}
+
+.project-pic:hover {
+  transition: .25s ease-in-out;
+  transform: scale(1.1);
+}
+
+.project-info-div {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.project-title {
+  font-size: 1.5rem;
+}
+
+.project-description {
+
 }
 
 .App-logo {
@@ -34,5 +99,22 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .project-pic {
+    width: 80vw;
+    display: flex;
+    justify-self: center;
+  }
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .project-info-div {
+    width: 80vw;
   }
 }
