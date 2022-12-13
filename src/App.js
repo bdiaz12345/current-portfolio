@@ -15,7 +15,7 @@ function App() {
       <div className='bottom-section'>
         <h2 className='projects-header'>Projects</h2>
         <div className='project'>
-          <a href='https://market-dev.nationsafedrivers.com/' target='_blank'><img src={proj1} className='project-pic'/></a>
+          <a href='https://nationsafedrivers.com/' target='_blank'><img src={proj1} className='project-pic'/></a>
           <div className='project-info-div'>
             <h4 className='project-title'>Nation Safe Drivers</h4>
             <p className='project-description'>This is a professional project I worked on for my last client, Nation Safe Drivers. It's essentially the brand new homefront website of the company.</p>
